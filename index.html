@@ -8,6 +8,36 @@
     <title>Mortgage Calculator</title>
   </head>
   <body>
+    <main>
+      <div class="parent-container">
+        <h1>Mortgage calculator</h1>
+        <div class="sliders">
+          <div>
+            <div><span>Purchase price:</span></div>
+            <input type="range" class="clider" id="myRange" />
+          </div>
+          <div>
+            <div><span>Equity:</span></div>
+            <input type="range" class="clider" id="myRange" />
+          </div>
+          <div>
+            <div><span>Repayment time:</span></div>
+            <input type="range" class="clider" id="myRange" />
+          </div>
+        </div>
+        <div class="estimated-amounts">
+          <div>
+            <span>Loan amount:</span><br />
+            <span class="loan-amount">$10000</span>
+          </div>
+          <div>
+            <span>Estimated pr. month:</span><br />
+            <span class="est-per-month">$1300</span>
+          </div>
+        </div>
+        <div class="submit-btn"><button>Get a mortgage quote</button></div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
