@@ -47,6 +47,30 @@ h1 {
   margin-bottom: 2em;
 }
 
+.slider {
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #4a56c2 50%, white 50%);
+  outline: none;
+  border-radius: 10px;
+  width: 15em;
+  height: 10px;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--iris);
+  position: relative;
+}
+
 .estimated-amounts {
   display: flex;
   gap: 6em;
@@ -64,5 +88,5 @@ button {
 }
 
 span {
-    font-size: .7rem;
+  font-size: 0.7rem;
 }
