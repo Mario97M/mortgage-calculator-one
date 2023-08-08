@@ -14,29 +14,74 @@
           <h1>Mortgage calculator</h1>
           <div class="sliders">
             <div>
-              <div><span>Purchase price:</span></div>
-              <input type="range" min="1" max="100" value="50" class="slider" />
+              <!-- VariableOne -->
+              <div>
+                <span
+                  >Purchase price: <span id="purchasePriceDisplay"></span
+                ></span>
+              </div>
+              <!-- Variable two -->
+              <input
+                type="range"
+                min="50000"
+                max="1000000"
+                value="50%"
+                class="slider"
+                id="purchasePriceRange"
+              />
             </div>
             <div>
-              <div><span>Equity:</span></div>
-              <input type="range" min="1" max="100" value="50" class="slider" />
+              <!-- Variable three -->
+              <div>
+                <span>Down payment: <span id="equityDisplay"></span></span>
+              </div>
+              <!-- Variable four -->
+              <input
+                type="range"
+                min="1000"
+                max="500000"
+                step="1000"
+                value="50%"
+                class="slider"
+                id="equityDisplayRange"
+              />
             </div>
             <div>
-              <div><span>Repayment time:</span></div>
-              <input type="range" min="1" max="100" value="50" class="slider" />
+              <!-- Variable five -->
+              <div>
+                <span
+                  >Repayment time: <span id="repaymentTimeDisplay"></span
+                ></span>
+              </div>
+              <!-- Variable six -->
+              <input
+                type="range"
+                min="5"
+                max="30"
+                step="1"
+                value="50%"
+                class="slider"
+                id="repaymentTimeRange"
+              />
             </div>
           </div>
           <div class="estimated-amounts">
             <div>
               <span>Loan amount:</span><br />
-              <div class="loan-amount">$10000</div>
+              <!-- Variable seven -->
+              <div class="loan-amount" id="loanAmount">$10000</div>
             </div>
             <div>
               <span>Estimated pr. month:</span><br />
-              <div class="est-per-month">$1300</div>
+              <!-- Variable eight -->
+              <div class="est-per-month" id="estPerMonth">$1300</div>
             </div>
           </div>
-          <div class="submit-btn"><button>Get a mortgage quote</button></div>
+          <!-- Variable nine -->
+          <div class="submit-btn" id="submitButton">
+            <button>Get a mortgage quote</button><br>
+            <span style="color: red;" id="error"></span>
+          </div>
         </div>
       </div>
     </main>
